@@ -39,52 +39,53 @@
     <div id="header"></div>
     <script>
       function essa() {
+          let lazarz = "";
           let x = 0;
           if(document.getElementById('plec1').checked == true){
               var p = 1;
           }else{
               var p = 2;
           }
-          alert(p);
         if (document.getElementById(1).value == "") {
-          alert("Nie ma imienia?");
+          lazarz += "Nie ma imienia?\n"
         }else{x++;}
         if (document.getElementById(2).value == "") {
-          alert("Nie ma wieku?");
+          lazarz += "Nie ma wieku?\n"
         }else{x++;}
         if (document.getElementById(3).value == "") {
-          alert("Nie ma emaila?");
+          lazarz += "Nie ma emaila?\n"
         }else{x++;}
         if (document.getElementById(4).value == "") {
-          alert("Nie ma pesela?");
+          lazarz += "Nie ma pesela?\n"
         }else if(document.getElementById(4).value.toString().length != 11){
-            alert("Błędna długość pesela?");
+            lazarz += "Błędna długość pesela?\n"
         }else if(document.getElementById(4).value[9] != p ){
-            alert("Błędna płeć lub pesel?");
+            lazarz += "Błędna płeć lub pesel?\n"
         }else {x++;}
         if (document.getElementById('plec1').checked == false && document.getElementById('plec2').checked == false) {
-          alert("Nie ma płci?");
+          lazarz += "Nie ma płci?\n"
         }else{x++;}
         if (document.getElementById(5).value == "") {
-          alert("Nie ma telefonu?");
+          lazarz += "Nie ma telefonu?\n"
         }else if(document.getElementById(5).value.toString().length != 9){
-            alert("Błędny numer telefonu?");
+            lazarz += "Błędny numer telefonu?\n"
         }else{x++;}
         if (document.getElementById(7).value == "") {
-          alert("Nie ma tytułu?");
+          lazarz += "Nie ma tytułu?\n"
         }else{x++;}
         if (document.getElementById(8).value == "") {
-          alert("Nie ma wydawcy?");
+          lazarz += "Nie ma wydawcy?\n"
         }else{x++;}
         if (document.getElementById(9).value == "") {
-          alert("Nie ma ISBN?");
+          lazarz += "Nie ma ISBN?\n"
         }else{x++;}
         if (document.getElementById(10).value == "") {
-          alert("Nie ma numeru ewidencyjnego?");
+          lazarz += "Nie ma numeru ewidencyjnego?\n"
         }else{x++;}
         if(x == 10){
             alert("Wszystko git")
         }
+        alert(lazarz);
       }
     </script>
   </body>
