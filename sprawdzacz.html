@@ -40,11 +40,12 @@
     <script>
       function essa() {
           let x = 0;
-          if(document.getElementById('plec1') == true){
+          if(document.getElementById('plec1').checked == true){
               var p = 1;
-          }else if (document.getElementById('plec2') == true){
+          }else{
               var p = 2;
           }
+          alert(p);
         if (document.getElementById(1).value == "") {
           alert("Nie ma imienia?");
         }else{x++;}
@@ -58,6 +59,8 @@
           alert("Nie ma pesela?");
         }else if(document.getElementById(4).value.toString().length != 11){
             alert("Błędna długość pesela?");
+        }else if(document.getElementById(4).value[9] != p ){
+            alert("Błędna płeć lub pesel?");
         }else {x++;}
         if (document.getElementById('plec1').checked == false && document.getElementById('plec2').checked == false) {
           alert("Nie ma płci?");
