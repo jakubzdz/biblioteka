@@ -91,9 +91,11 @@
           document.getElementById("tfu").innerHTML +=
             "Błędna płeć lub pesel?<br>";
         } else if (xd != document.getElementById(4).value[10]) {
-          document.getElementById("tfu").innerHTML += "Błędna suma kontrolna?";
+          document.getElementById("tfu").innerHTML +=
+            "Błędna suma kontrolna?<br>";
         } else if (m != 0 && document.getElementById(4).value[10] == 0) {
-          document.getElementById("tfu").innerHTML += "Błędna suma kontrolna?";
+          document.getElementById("tfu").innerHTML +=
+            "Błędna suma kontrolna?<br>";
         } else {
           x++;
         }
